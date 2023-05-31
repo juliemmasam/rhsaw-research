@@ -1,1 +1,317 @@
-{"train_id": 2, "loc_speed": [{"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:05:11"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:06:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:06:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:07:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:07:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:08:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:08:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:09:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:09:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:10:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:10:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:11:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:11:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:12:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:12:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:13:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:13:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:14:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:14:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:15:01"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:15:31"}, {"location": "latitude, longitude", "speed": "speed in mph", "timestamp": "05-25-23, 13:16:01"}]}
+{
+    "train_id": 2,
+    "loc_speed": [
+        {
+            "location": {
+                "latitude": 36.164345,
+                "longitude": -86.83315
+            },
+            "speed": 0.582,
+            "timestamp": "05-31-23, 13:10:52"
+        },
+        {
+            "location": {
+                "latitude": 36.1645,
+                "longitude": -86.833065
+            },
+            "speed": 0.755,
+            "timestamp": "05-31-23, 13:20:39"
+        },
+        {
+            "location": {
+                "latitude": 36.1645,
+                "longitude": -86.833065
+            },
+            "speed": 0.494,
+            "timestamp": "05-31-23, 13:20:41"
+        },
+        {
+            "location": {
+                "latitude": 36.164505,
+                "longitude": -86.833066667
+            },
+            "speed": 0.575,
+            "timestamp": "05-31-23, 13:20:42"
+        },
+        {
+            "location": {
+                "latitude": 36.164505,
+                "longitude": -86.833066667
+            },
+            "speed": 0.494,
+            "timestamp": "05-31-23, 13:20:43"
+        },
+        {
+            "location": {
+                "latitude": 36.164513333,
+                "longitude": -86.833066667
+            },
+            "speed": 0.925,
+            "timestamp": "05-31-23, 13:20:44"
+        },
+        {
+            "location": {
+                "latitude": 36.164513333,
+                "longitude": -86.833066667
+            },
+            "speed": 0.494,
+            "timestamp": "05-31-23, 13:20:45"
+        },
+        {
+            "location": {
+                "latitude": 36.164523333,
+                "longitude": -86.833066667
+            },
+            "speed": 1.11,
+            "timestamp": "05-31-23, 13:20:46"
+        },
+        {
+            "location": {
+                "latitude": 36.164523333,
+                "longitude": -86.833066667
+            },
+            "speed": 0.509,
+            "timestamp": "05-31-23, 13:20:47"
+        },
+        {
+            "location": {
+                "latitude": 36.164533333,
+                "longitude": -86.83307
+            },
+            "speed": 1.149,
+            "timestamp": "05-31-23, 13:20:48"
+        },
+        {
+            "location": {
+                "latitude": 36.164533333,
+                "longitude": -86.83307
+            },
+            "speed": 0.597,
+            "timestamp": "05-31-23, 13:20:49"
+        },
+        {
+            "location": {
+                "latitude": 36.164541667,
+                "longitude": -86.83307
+            },
+            "speed": 0.925,
+            "timestamp": "05-31-23, 13:20:50"
+        },
+        {
+            "location": {
+                "latitude": 36.164541667,
+                "longitude": -86.83307
+            },
+            "speed": 0.602,
+            "timestamp": "05-31-23, 13:20:51"
+        },
+        {
+            "location": {
+                "latitude": 36.164551667,
+                "longitude": -86.833071667
+            },
+            "speed": 1.12,
+            "timestamp": "05-31-23, 13:20:52"
+        },
+        {
+            "location": {
+                "latitude": 36.164551667,
+                "longitude": -86.833071667
+            },
+            "speed": 0.617,
+            "timestamp": "05-31-23, 13:20:53"
+        },
+        {
+            "location": {
+                "latitude": 36.164565,
+                "longitude": -86.833075
+            },
+            "speed": 1.51,
+            "timestamp": "05-31-23, 13:20:54"
+        },
+        {
+            "location": {
+                "latitude": 36.164565,
+                "longitude": -86.833075
+            },
+            "speed": 0.741,
+            "timestamp": "05-31-23, 13:20:55"
+        },
+        {
+            "location": {
+                "latitude": 36.164586667,
+                "longitude": -86.833081667
+            },
+            "speed": 2.478,
+            "timestamp": "05-31-23, 13:20:56"
+        },
+        {
+            "location": {
+                "latitude": 36.164586667,
+                "longitude": -86.833081667
+            },
+            "speed": 0.844,
+            "timestamp": "05-31-23, 13:20:57"
+        },
+        {
+            "location": {
+                "latitude": 36.164606667,
+                "longitude": -86.833086667
+            },
+            "speed": 2.264,
+            "timestamp": "05-31-23, 13:20:58"
+        },
+        {
+            "location": {
+                "latitude": 36.164606667,
+                "longitude": -86.833086667
+            },
+            "speed": 0.869,
+            "timestamp": "05-31-23, 13:20:59"
+        },
+        {
+            "location": {
+                "latitude": 36.164626667,
+                "longitude": -86.83309
+            },
+            "speed": 2.239,
+            "timestamp": "05-31-23, 13:21:00"
+        },
+        {
+            "location": {
+                "latitude": 36.164626667,
+                "longitude": -86.83309
+            },
+            "speed": 0.947,
+            "timestamp": "05-31-23, 13:21:01"
+        },
+        {
+            "location": {
+                "latitude": 36.164635,
+                "longitude": -86.833095
+            },
+            "speed": 1.028,
+            "timestamp": "05-31-23, 13:21:02"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:21"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:22"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:23"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:24"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:25"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:26"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:27"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:28"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:29"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:30"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:31"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:32"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:33"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:34"
+        },
+        {
+            "location": {
+                "latitude": null,
+                "longitude": null
+            },
+            "speed": null,
+            "timestamp": "05-31-23, 14:22:35"
+        }
+    ]
+}
