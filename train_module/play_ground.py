@@ -2,6 +2,7 @@ import gps
 import json
 import time
 from datetime import datetime
+import publish_data
 
 DATA_FILE = "/home/train/train_data/train_data.json"
 
@@ -84,6 +85,7 @@ while True:
         current_json_data = read_data_file()
         current_json_data["loc_speed"].append(current_sensor_data)
         write_loc_speed_data(current_json_data)
+        data_is_published = publish_data.publish_data(current_sensor_data)
         print("Data has been written.")
         time.sleep(1) # Run the program every after one second of sleep
     
