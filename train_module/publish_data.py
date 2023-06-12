@@ -9,7 +9,7 @@ CACHE = "/home/train/train_data/cache.json"
 
 def connection_is_present():
     '''
-    This method checks if there is a connection to the API
+    This function checks if there is a connection to the API
     '''
     try: 
         request.urlopen(API_URL, timeout=2)
@@ -20,7 +20,7 @@ def connection_is_present():
 
 def write_to_cache(train_data):
     '''
-    This method writes to the local cache if there is no connection
+    This function writes to the local cache if there is no connection
     to the API
     '''
     with open(CACHE, "w") as file: 
@@ -33,7 +33,7 @@ def write_to_cache(train_data):
 
 def publish_data(train_data):
     '''
-    This method contains the data publication logic
+    This function contains the data publication logic
     It first checks the connection availability and either publishes 
     or stores the data in cache
     '''
