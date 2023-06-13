@@ -3,7 +3,7 @@ import requests
 
 import json
 
-API_URL = "http://143.244.147.111:3000/trains/2" # to be changed
+API_URL = "http://143.244.147.111:3000/trains/" # to be changed
 CACHE = "/home/train/train_data/cache.json"
 
 
@@ -12,7 +12,7 @@ def connection_is_present():
     This function checks if there is a connection to the API
     '''
     try: 
-        request.urlopen(API_URL, timeout=2)
+        request.urlopen(API_URL+"2", timeout=2)
         return True
     except:
         return False
@@ -42,7 +42,8 @@ def publish_data(train_data):
     or stores the data in cache
     '''
     if connection_is_present():
-        requests.post(url=API_URL, json=json.dumps(train_data))
+        train_id = train_data["train_id"]
+        requests.post(url=API_URL+str(train_id), json=json.dumps(train_data))
         return True
     else:
         write_to_cache(train_data)
