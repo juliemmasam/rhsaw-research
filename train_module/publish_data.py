@@ -28,8 +28,8 @@ def write_to_cache(train_data):
     cache_file.close()
 
     with open(CACHE, "w") as file: 
-        new_cache = cache_data["cache"].append(train_data)
-        json.dump(new_cache, file)
+        cache_data["cache"].append(train_data)
+        json.dump(cache_data, file)
         file.close()
 
         return True
