@@ -3,7 +3,7 @@ import requests
 
 import json
 
-API_URL = "143.244.147.111:3000/trains/2" # to be changed
+API_URL = "http://143.244.147.111:3000/trains/2" # to be changed
 CACHE = "/home/train/train_data/cache.json"
 
 
