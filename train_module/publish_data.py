@@ -42,7 +42,7 @@ def publish_data(train_data):
     or stores the data in cache
     '''
     if connection_is_present():
-        requests.post(url=API_URL, json=train_data)
+        requests.post(url=API_URL, json=json.dumps(train_data))
         return True
     else:
         write_to_cache(train_data)
