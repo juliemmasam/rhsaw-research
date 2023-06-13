@@ -23,10 +23,14 @@ def write_to_cache(train_data):
     This function writes to the local cache if there is no connection
     to the API
     '''
+    cache_file = open(CACHE)
+    cache_data = json.load(cache_file)
+    cache_file.close()
+
     with open(CACHE, "w") as file: 
-        cache = json.load(file)
-        new_cache = cache["cache"].append(train_data)
+        new_cache = cache_data["cache"].append(train_data)
         json.dump(new_cache, file)
+        file.close()
 
         return True
         
