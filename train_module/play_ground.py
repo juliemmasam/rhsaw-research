@@ -105,8 +105,8 @@ while True:
     if (has_data):
         current_json_data = read_data_file()
         current_json_data["loc_speed"].append(current_sensor_data)
-        write_loc_speed_data(current_json_data) # Write the data locally
-        data_to_publish = prepare_request_body(current_json_data)
+        write_loc_speed_data(current_sensor_data) # Write the data locally
+        data_to_publish = prepare_request_body(current_sensor_data)
         data_is_published = publish_data.publish_data(data_to_publish)
         print("Data has been written.")
         time.sleep(1) # Run the program every after one second of sleep
