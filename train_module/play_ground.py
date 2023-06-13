@@ -97,7 +97,7 @@ def prepare_request_body(train_data):
         "data": train_data
     }
 
-    return json.dumps(req_body)
+    return req_body
 
 
 while True: 
