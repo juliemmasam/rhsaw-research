@@ -5,7 +5,7 @@ router.use((req, res, next) => {
     next()
 })
 
-route.use(express.json())
+router.use(express.json())
 
 router.route("/:id")
     .get((req, res) => {
