@@ -5,12 +5,14 @@ router.use((req, res, next) => {
     next()
 })
 
+route.use(express.json())
+
 router.route("/:id")
     .get((req, res) => {
         res.send(`The get request for train ${req.params.id} was issued`)
     })
     .post((req, res) => {
-        console.log(req)
+        console.log(req.body)
         res.send(`The post request for train ${req.params.id} was issued`)
     })
 
