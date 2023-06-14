@@ -44,6 +44,7 @@ def publish_cache_records():
             update_records_to_cache(cache)
             is_published = publish_data.publish_data(record) # Publish the latest records first (LIFO)
             if(not is_published):
+                print("Data has not been published")
                 break # Break the loop when the data can't be published
         return 
     
