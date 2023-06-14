@@ -28,6 +28,7 @@ def update_records_to_cache(unpublished_records):
 def cache_is_empty():
     cache = open_cache()
     if(cache != "Corrupted File"):
+        print("Corrupted cache file.")
         return len(cache["cache"]) == 0
     else:
         return True # Later options to log the details of corrupt cache file
