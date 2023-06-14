@@ -14,10 +14,8 @@ def open_cache():
 
     print(cache)
     if "cache" in cache:
-        print("The file is okay")
         return cache
     else:
-        print("Corrupted file")
         return "Corrupted File"
     
 
@@ -31,7 +29,6 @@ def update_records_to_cache(unpublished_records):
 def cache_is_empty():
     cache = open_cache()
     if(cache != "Corrupted File"):
-        print("Corrupted cache file.")
         return len(cache["cache"]) == 0
     else:
         return True # Later options to log the details of corrupt cache file
@@ -39,7 +36,6 @@ def cache_is_empty():
 
 def publish_cache_records():
     if(cache_is_empty()):
-         print("cache is empty")
          return
     else:
         cache = open_cache()
@@ -49,7 +45,6 @@ def publish_cache_records():
             update_records_to_cache(cache)
             is_published = publish_data.publish_data(record) # Publish the latest records first (LIFO)
             if(not is_published):
-                print("Data has not been published")
                 break # Break the loop when the data can't be published
         return 
     
