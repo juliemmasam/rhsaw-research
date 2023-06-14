@@ -18,7 +18,7 @@ def open_cache():
         return "Corrupted File"
     
 
-def store_unpublished_records_to_cache(unpublished_records):
+def update_records_to_cache(unpublished_records):
     with open(CACHE_FILE, "w") as file:
         json.dump(unpublished_records, file)
         file.close()
@@ -41,12 +41,10 @@ def publish_cache_records():
         
         for index in range(len(cache["cache"])-1, -1, -1):
             record = cache["cache"].pop(index) # Get the latest record
+            update_records_to_cache(cache)
             is_published = publish_data.publish_data(record) # Publish the latest records first (LIFO)
             if(not is_published):
-                cache["cache"].append(record)
-                unpublished_records = cache["cache"]
-                store_unpublished_records_to_cache(unpublished_records)
-                break # Break the loop when the 
+                break # Break the loop when the data can't be published
         return 
     
 
