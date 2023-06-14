@@ -12,6 +12,7 @@ def open_cache():
     cache = json.load(file)
     file.close()
 
+    print(cache)
     if hasattr(cache, "cache"):
         print("The file is okay")
         return cache
