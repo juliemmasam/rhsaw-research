@@ -12,7 +12,7 @@ router.route("/:id")
         res.send(`The get request for train ${req.params.id} was issued`)
     })
     .post((req, res) => {
-        console.log(req.body)
+        console.log(req)
         res.send(`The post request for train ${req.params.id} was issued`)
     })
 
