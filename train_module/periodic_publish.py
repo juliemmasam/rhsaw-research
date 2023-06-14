@@ -16,6 +16,7 @@ def open_cache():
         print("The file is okay")
         return cache
     else:
+        print("Corrupted file")
         return "Corrupted File"
     
 
