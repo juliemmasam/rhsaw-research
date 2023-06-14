@@ -35,6 +35,7 @@ def cache_is_empty():
 
 def publish_cache_records():
     if(cache_is_empty()):
+         print("cache is empty")
          return
     else:
         cache = open_cache()
