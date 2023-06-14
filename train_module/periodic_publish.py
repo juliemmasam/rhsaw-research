@@ -13,6 +13,7 @@ def open_cache():
     file.close()
 
     if hasattr(cache, "cache"):
+        print("The file is okay")
         return cache
     else:
         return "Corrupted File"
