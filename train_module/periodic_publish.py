@@ -12,7 +12,7 @@ def open_cache():
     cache = json.load(file)
     file.close()
 
-    if hasattr("cache", cache):
+    if hasattr(cache, "cache"):
         return cache
     else:
         return "Corrupted File"
