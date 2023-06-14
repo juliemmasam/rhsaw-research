@@ -13,7 +13,7 @@ def open_cache():
     file.close()
 
     print(cache)
-    if hasattr(cache, "cache"):
+    if "cache" in cache:
         print("The file is okay")
         return cache
     else:
