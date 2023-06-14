@@ -56,5 +56,5 @@ def publish_cache_records():
 
 while True:
     publish_cache_records()
-    time.sleep(1200)
+    time.sleep(120) #sleep for two minutes
 
