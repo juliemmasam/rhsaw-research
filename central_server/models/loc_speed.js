@@ -13,7 +13,7 @@ const LocSpeedSchema = new Schema({
             timestamp: String
         }
     ] 
-})
+}, {timestamps: true})
 
 const LocSpeed = mongoose.model("loc_speed", LocSpeedSchema)
 
