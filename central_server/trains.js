@@ -1,10 +1,6 @@
 const express = require("express")
 const router = express()
 
-router.use((req, res, next) => {
-    next()
-})
-
 router.use(express.json())
 
 router.route("/:id")
