@@ -1,8 +1,7 @@
 const mongoose = require("mongoose")
-const Schema = mongoose.Schema, ObjectId = Schema.ObjectId
+const Schema = mongoose.Schema
 
 const LocSpeedSchema = new Schema({
-    _id: ObjectId,
     train_id: Number,
     loc_speed: [
         {
