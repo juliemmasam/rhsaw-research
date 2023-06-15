@@ -43,7 +43,7 @@ def publish_data(train_data):
     '''
     if connection_is_present():
         train_id = train_data["train_id"]
-        requests.post(url=API_URL+str(train_id), json=json.dumps(train_data))
+        requests.post(url=API_URL+str(train_id), json=train_data)
         return True
     else:
         write_to_cache(train_data)
