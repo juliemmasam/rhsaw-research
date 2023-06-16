@@ -28,4 +28,6 @@ function broadcast_locspeed(loc_speed_data){
     })
 }
 
-module.exports = broadcast_locspeed
+module.exports = {
+    broadcast_locspeed: broadcast_locspeed
+}
