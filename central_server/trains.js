@@ -31,7 +31,7 @@ router.route("/loc_speed_data/:id")
         .catch((err) => console.log(err))
 
         // Publish to message broker
-        publish.broadcast_locspeed(req.body.train_id)
+        publish.broadcast_locspeed(req.body)
     })
 
 module.exports = router
