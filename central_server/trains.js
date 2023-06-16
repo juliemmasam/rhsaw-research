@@ -1,4 +1,5 @@
 const LocSpeed = require("./models/loc_speed")
+const publish = require("./msbroker/publisher")
 const express = require("express")
 const router = express()
 
@@ -28,6 +29,9 @@ router.route("/loc_speed_data/:id")
         )
         .then((result) => res.send(result.acknowledged))
         .catch((err) => console.log(err))
+
+        // Publish to message broker
+        publish.broadcast_locspeed(req.body.train_id)
     })
 
 module.exports = router
