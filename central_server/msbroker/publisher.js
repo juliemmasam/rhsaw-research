@@ -18,7 +18,7 @@ function broadcast_locspeed(loc_speed_data){
             const exchange = "train_locspeed"
 
             channel.assertExchange(exchange, "fanout", {durable: false})
-            channel.publish(exchange, '', Buffer.from(loc_speed_data))
+            channel.publish(exchange, '', Buffer.from(JSON.stringify(loc_speed_data)))
             console.log(`Sent the data ${loc_speed_data}`)
 
             setTimeout(() => {
