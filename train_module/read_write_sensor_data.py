@@ -2,7 +2,9 @@ import gps
 import json
 import time
 from datetime import datetime
+import publish_data
 
+CONFIG_FILE = "/home/train/config/train_info.json"
 DATA_FILE = "/home/train/train_data/train_data.json"
 
 # Initialize the gps session
@@ -78,12 +80,35 @@ def write_loc_speed_data(new_json_data):
         data_file.close()
 
 
+def load_configuration_data():
+    config_file = open(CONFIG_FILE)
+    config_json_file = json.load(config_file)
+    config_file.close()
+    train_id = config_json_file["TRAIN_ID"]
+
+    return train_id
+
+
+def prepare_request_body(train_data):
+    TRAIN_ID = load_configuration_data()
+
+    req_body = {
+        "train_id": TRAIN_ID, 
+        "data": train_data
+    }
+
+    return req_body
+
+
 while True: 
     (has_data, current_sensor_data) = read_sensor_data()
     if (has_data):
         current_json_data = read_data_file()
         current_json_data["loc_speed"].append(current_sensor_data)
-        write_loc_speed_data(current_json_data)
+        write_loc_speed_data(current_json_data) # Write the data locally
+        # Prepare the data to write on the server
+        data_to_publish = prepare_request_body(current_sensor_data) 
+        data_is_published = publish_data.publish_data(data_to_publish)
         print("Data has been written.")
         time.sleep(1) # Run the program every after one second of sleep
     
