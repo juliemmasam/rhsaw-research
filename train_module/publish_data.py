@@ -7,8 +7,8 @@ import json
 
 load_dotenv()
 
-API_URL=os.getenv("API_URL")
-CACHE=os.getenv("CACHE")
+API_URL = os.getenv("API_URL")
+CACHE = os.getenv("CACHE")
 
 
 def connection_is_present():
