@@ -4,8 +4,13 @@ import time
 from datetime import datetime
 import publish_data
 
-CONFIG_FILE = "/home/train/config/train_info.json"
-DATA_FILE = "/home/train/train_data/train_data.json"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+CONFIG_FILE = os.getenv("CONFIG_FILE")
+DATA_FILE = os.getenv("DATA_FILE")
 
 # Initialize the gps session
 session = gps.gps()

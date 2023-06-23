@@ -5,7 +5,12 @@ import publish_data
 import json
 import time
 
-CACHE_FILE = "/home/train/train_data/cache.json"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+CACHE_FILE = os.getenv("CACHE_FILE")
 
 def open_cache():
     file = open(CACHE_FILE)

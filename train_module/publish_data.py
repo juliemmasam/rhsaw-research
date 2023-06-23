@@ -8,7 +8,7 @@ import json
 load_dotenv()
 
 API_URL = os.getenv("API_URL")
-CACHE = os.getenv("CACHE")
+CACHE_FILE = os.getenv("CACHE_FILE")
 
 
 def connection_is_present():
@@ -27,11 +27,11 @@ def write_to_cache(train_data):
     This function writes to the local cache if there is no connection
     to the API
     '''
-    cache_file = open(CACHE)
+    cache_file = open(CACHE_FILE)
     cache_data = json.load(cache_file)
     cache_file.close()
 
-    with open(CACHE, "w") as file: 
+    with open(CACHE_FILE, "w") as file: 
         cache_data["cache"].append(train_data)
         json.dump(cache_data, file)
         file.close()
