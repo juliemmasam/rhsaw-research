@@ -1,3 +1,4 @@
 central_server/node_modules/
 central_server/.env
+train_module/.env
 message_broker/
