@@ -1,10 +1,14 @@
+from dotenv import load_dotenv
+import os
 from urllib import request
 import requests
 
 import json
 
-API_URL = "http://143.244.147.111:3000/trains/loc_speed_data/" # to be changed
-CACHE = "/home/train/train_data/cache.json"
+load_dotenv()
+
+API_URL=os.getenv("API_URL")
+CACHE=os.getenv("CACHE")
 
 
 def connection_is_present():
